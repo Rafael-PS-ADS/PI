@@ -1,0 +1,10 @@
+content-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 128px;
+    text-align: left;
+}
+h1{
+    margin-left: 20px;
+}

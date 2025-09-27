@@ -1,0 +1,14 @@
+<div class="content-container">
+    <h1>{{ titulo }}</h1>
+    <form>
+        <label for="email">Login</label><br>
+        <input class="input-simples" id="email" name="email" type="email" [(ngModel)]="login"
+            placeholder="Digite seu email" />
+        <label for="input-senha">Senha</label><br>
+        <input class="input-simples" id="input-senha" name="input-senha" type="password" [(ngModel)]="senha"
+            placeholder="Digite sua senha" />
+        <button class="input-submeter" (disabled)="botaoDesabilitado" (click)="onBotaoClicado()">
+            Confirmar
+        </button>
+    </form>
+</div>

@@ -1,0 +1,73 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 128px;
+    text-align: left;
+}
+
+.content-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    color: #555;
+    /* Cor do texto */
+}
+
+form {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo para o input de texto */
+.input-simples,
+.input-submeter {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão */
+.input-submeter {
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.mensagem {
+    margin: 16px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-principal {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

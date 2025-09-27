@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        @if (exibirLogo) {
+        <a class="navbar-logo" href="/">Logo da Aplicação</a>
+        }
+        <ul class="navbar-list">
+            @for (item of itensMenu; track item){
+            <li class="navbar-item" routerLink="{{item.link}}">
+                <a>{{item.label}}</a>
+            </li>
+            }
+        </ul>
+    </div>
+</nav>
