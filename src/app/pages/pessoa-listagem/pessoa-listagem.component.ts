@@ -13,10 +13,20 @@ export class PessoaListagemComponent implements OnInit{
 
     listaPessoas:Pessoa[]=[];
 
-    constructor(private service:PessoaService) {}
+    constructor(private service:PessoaService, private route: Router){ }
 
     ngOnInit(): void {
-        this.listaPessoas = this.service.listar();
+
+        this.service.listar().subscribe((pessoas)=>{
+            this.listaPessoas = pessoas;
+        });
+    }
+    excluir(id:number){
+        if(id){
+            this.service.excluir(id).subscribe(() => {
+                window.location.reload()
+            });
+        }
     }
 
 }

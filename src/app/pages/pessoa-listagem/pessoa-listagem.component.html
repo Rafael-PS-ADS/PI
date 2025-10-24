@@ -18,8 +18,8 @@
                     <td>{{item.sobrenome}}</td>
                     <td>{{item.dtNascimento}}</td>
 		   <td>
-                    <button class="btn-editar">Editar</button>
-                    <button class="btn-excluir">Excluir</button>
+                    <button class="btn-editar" [routerLink]="['alterar', item.id]" >Editar</button>
+                    <button class="btn-excluir" (click)="excluir(item.id!)" >Excluir</button>
                 </td>	
                 </tr>
             }
