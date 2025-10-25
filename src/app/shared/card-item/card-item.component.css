@@ -1,0 +1,17 @@
+.example-card {
+    max-width: 300px;
+}
+
+.example-card button{
+    width: 100%;
+    margin: 0 16px 48px;
+}
+
+
+.example-card img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
